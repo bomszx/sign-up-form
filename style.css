@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    font-family: 'Norse-Bold', sans-serif;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src:
+        local('Norse-Bold'),
+        local('Norse-Bold'),
+        url('font/Norse-Bold.otf')
+        format('opentype')
+}
+
+input, label {
+    display: block;
+}
