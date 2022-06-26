@@ -1,11 +1,11 @@
+body {
+    background-color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-aside {
-    font-family: 'Norse-Bold', sans-serif;
 }
 
 @font-face {
@@ -17,6 +17,29 @@ aside {
         format('opentype')
 }
 
-input, label {
-    display: block;
+.form-container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.side-hero {
+    height: 80vh;
+    width: 40vw;
+    background-image: url(./images/green-stuff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    height: 150px;
+}
+
+.form-section {
+    height: 80vh;
+    width: 60vw;
+    background-color: azure;
 }
