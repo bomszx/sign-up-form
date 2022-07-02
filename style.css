@@ -1,29 +1,6 @@
-/* Media queries */
-@media only screen and (max-width: 41rem) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .form-container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .side-hero {
-        width: 100%;
-    }
-
-    .form-section {
-        width: 100%;
-    }
-  }
-
-body {
+html body {
     background-color: black;
-}
-
-* {
+    width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,9 +15,9 @@ body {
         format('opentype')
 }
 
-
 img {
     height: 120px;
+
 
 }
 
@@ -49,10 +26,34 @@ h1 {
     color: white;
     font-size: 4rem;
     font-weight: 900;
+}
+
+.form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 
 }
 
+.form-section {
+    height: 100vh;
+    width: 60vw;
+    /* min-width: 300px; */
+    min-width: 500px; 
+    background-color: rgb(255, 255, 255);
+}
 
+
+.side-hero {
+    height: 100vh;
+    width: 40vw;
+    min-width: 400px; 
+    background-image: url(./images/green-stuff.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .odin-container {
     display: flex;
@@ -65,33 +66,32 @@ h1 {
 
     position: relative;
     top: 192px;
-    
 }
 
+/* Media queries */
+@media screen and (max-width: 850px) {
+    .form-container {
+        flex-direction: column;
+       
+    }
 
-.form-container {
-    max-height: 100vh;
-    margin: 0 auto;
+    .side-hero, .form-section {
+        width: 100vw;
+        height: 30rem;
+    }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .odin-container {
+        position: relative;
+        top: 120px;
+    }
 
-.side-hero {
-    height: 100vh;
-    /* width: 100%; */
-    min-width: 300px; 
-    background-image: url(./images/green-stuff.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    h1 {
+        font-size: 6rem;
+    }
+
+    img {
+        height: 170px;
+    }
 
 
-}
-
-.form-section {
-    height: 100vh;
-    /* width: 100%; */
-    /* min-width: 300px; */
-    background-color: azure;
 }
