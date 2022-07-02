@@ -21,11 +21,24 @@ img {
 
 }
 
+input, label {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1 {
     font-family: 'Norse-Bold';
     color: white;
     font-size: 4rem;
     font-weight: 900;
+}
+
+.input-section {
+    border: 1px solid #E5E7EB;
 }
 
 .form-container {
@@ -67,6 +80,8 @@ h1 {
     position: relative;
     top: 192px;
 }
+
+
 
 /* Media queries */
 @media screen and (max-width: 850px) {
