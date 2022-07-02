@@ -1,3 +1,24 @@
+/* Media queries */
+@media only screen and (max-width: 41rem) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-hero {
+        width: 100%;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+  }
+
 body {
     background-color: black;
 }
@@ -17,31 +38,60 @@ body {
         format('opentype')
 }
 
+
+img {
+    height: 120px;
+
+}
+
+h1 {
+    font-family: 'Norse-Bold';
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+
+
+.odin-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    gap: .5rem;
+    padding: 16px;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 192px;
+    
+}
+
+
 .form-container {
-    height: 100vh;
+    max-height: 100vh;
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
-
-
+    justify-content: center;
 }
 
 .side-hero {
-    height: 80vh;
-    width: 40vw;
+    height: 100vh;
+    /* width: 100%; */
+    min-width: 300px; 
     background-image: url(./images/green-stuff.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 100px; 
-}
 
-img {
-    height: 150px;
 
 }
 
 .form-section {
-    height: 80vh;
-    width: 100vw;
+    height: 100vh;
+    /* width: 100%; */
+    /* min-width: 300px; */
     background-color: azure;
 }
