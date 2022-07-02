@@ -41,9 +41,14 @@ form {
 }
 
 input {
-    border: 1px solid #E5E7EB;
+    border: 0.5px solid #E5E7EB;
     border-radius: 3px;
+}
 
+input:focus {
+    border: 1px solid rgb(0, 140, 255);
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+    outline: none !important;
 }
 
 h1 {
@@ -58,7 +63,8 @@ h1 {
 }
 
 .input-section {
-    border: 1px solid #E5E7EB;
+    border: 0.5px solid #E5E7EB;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
 }
 
 .form-container {
