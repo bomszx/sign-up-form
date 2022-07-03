@@ -152,6 +152,7 @@ button {
 @media screen and (max-width: 850px) {
     .form-container {
         flex-direction: column;
+        /* height: 100vw; */
     }
 
     .form-section {
@@ -195,8 +196,17 @@ button {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .side-hero {
+/* @media screen and (max-width: 850px) {
+    .side-hero, .input-section {
         width: 100vw;
-    }    
+        height: 100vw;
+    }
+} */
+
+
+@media screen and (max-width: 500px) {
+    .side-hero, .input-section {
+        width: 100vw;
+    }
 }
+
