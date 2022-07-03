@@ -1,6 +1,6 @@
 html body {
     background-color: black;
-    width: 100vw;
+    max-width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -91,16 +91,16 @@ button {
 }
 
 .form-container {
-    height: 100vh;
-    width: 100vw;
+    /* min-height: 90vh; */
+    max-width: 100vw;
     display: flex;
     justify-content: center;
 
 }
 
 .form-section {
-    height: 100vh;
-    width: 60vw;
+    min-height: 100vh;
+    max-width: 60vw;
     /* min-width: 300px; */
     min-width: 500px; 
     background-color: #f0f0f0;
@@ -111,7 +111,7 @@ button {
 }
 
 .side-hero {
-    height: 100vh;
+    max-height: 100vh;
     width: 40vw;
     min-width: 500px; 
     background-image: url(./images/green-stuff.jpg);
@@ -149,20 +149,23 @@ button {
 
 
 /* Media queries */
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
     .form-container {
         flex-direction: column;
-        /* height: 100vw; */
+        justify-content: flex-start;
+        align-items: center;
+        /* min-width: 400px; */
     }
 
     .form-section {
-        width: 100vw;
+        padding: 0;
+        min-width: 100vw;
     }
 
     .side-hero {
+        min-height: 200px;
+        min-width: 100vw;
 
-        width: 100vw;
-        height: 20rem;
     }
 
     .odin-container {
@@ -178,6 +181,7 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     h1 {
@@ -195,18 +199,3 @@ button {
         align-items: center;
     }
 }
-
-/* @media screen and (max-width: 850px) {
-    .side-hero, .input-section {
-        width: 100vw;
-        height: 100vw;
-    }
-} */
-
-
-@media screen and (max-width: 500px) {
-    .side-hero, .input-section {
-        width: 100vw;
-    }
-}
-
