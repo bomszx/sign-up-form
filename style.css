@@ -1,6 +1,9 @@
-html {
+* {
     margin: 0;
     padding: 0;
+}
+
+html, body {
     box-sizing: border-box;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +27,7 @@ img {
 h1 {
     font-family: 'Norse-Bold';
     color: white;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 100;
 }
 
@@ -83,7 +86,7 @@ button {
 .submit-section a, p {
     margin-top: 2rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .first-column div, .second-column div {
@@ -100,7 +103,7 @@ button {
     display: flex;
     justify-content: center;
     height: 100vh;
-    margin: 0 8rem;
+    margin: 0 6rem;
     
 }
 
@@ -123,15 +126,15 @@ button {
 
 .odin-container {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
     gap: .5rem;
-    padding: 0px;
 
     justify-content: center;
     align-items: center;
 
     position: relative;
-    top: 192px;
+    top: 118px;
 }
 
 .header, .input-section, .submit-section {
@@ -145,9 +148,6 @@ button {
         margin: 0;
         flex-direction: column;
         align-items: center;
-
-        padding: 0;
-        margin: 0;
     }
 
     .odin-container h1, img {
@@ -157,19 +157,15 @@ button {
 
     .odin-container {
         justify-content: center;
-
+        align-items: end;
         position: relative;
-        top: -0px;
-        
+        top: 65px;
     }
 
     .side-hero, .form-section {
         width: 100vw;
         min-width: 200px;
-    }
-
-    .first-column {
-        margin-bottom: -100px;
+        height: 100vh;
     }
 
     .input-section {
@@ -181,6 +177,7 @@ button {
     form {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .submit-section {
@@ -188,6 +185,18 @@ button {
         flex-direction: column;
         align-items: center;
     }
+}
 
+@media (max-width: 550px) {
+    .first-column {
+        margin-bottom: -60px;
+    }
 
+    .side-hero {
+        height: 12vh;
+    }
+
+    .odin-container {
+        padding: 0;
+    }
 }
