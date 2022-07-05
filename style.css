@@ -150,6 +150,13 @@ button {
         align-items: center;
     }
 
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .odin-container h1, img {
         height: 100px;
         font-size: 100px;
